@@ -1,0 +1,422 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+/*This is Start of Scroll bar style section*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 136, 169, 1);
+    border-radius: 10px;
+}
+
+/*This is End of Scroll bar style section*/
+
+/*This is the start of menu section*/
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.h2-logo {
+    color: white;
+}
+
+.div-menu ul {
+    list-style: none;
+}
+
+.div-menu li {
+    display: inline-block;
+    padding: 0 20px
+}
+
+.div-menu li,
+a {
+    transition: all 0.3s ease 0s;
+}
+
+.div-menu a:hover {
+    color: #0088a9;
+}
+
+.div-menu a,
+.btn-cv {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-cv {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-cv:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/*This is the end of menu section*/
+
+
+/*This is the Start of Hero section*/
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 90px 10%;
+}
+
+.div-info h1 {
+    font-size: 42px;
+    color: white;
+}
+
+.div-info h2 {
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+}
+
+.div-info p {
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 2;
+}
+
+.img-hero {
+    height: 440px;
+    width: auto;
+    border-radius: 65px;
+}
+
+.hr-hero {
+    width: 15%;
+    border: 3px solid rgba(0, 136, 169, 1);
+    border-radius: 30px;
+    transform: skewY(5deg);
+    padding: 2px;
+    margin: 10px;
+}
+
+.arrow-img {
+    width: 55px;
+    position: relative;
+    left: 48%;
+    top: 60px;
+    transform: rotate(90deg);
+    animation-name: arrow;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    from {
+        top: 20px
+    }
+
+    to {
+        bottom: 20px
+    }
+}
+
+/*This is the End of Hero section*/
+
+/*This is the Start of Skills section*/
+
+.h2-skills {
+    margin-top: 220px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 65px;
+    color: white;
+}
+
+.skills-icons {
+    display: flex;
+    align-items: center;
+    padding: 40px 10%;
+    justify-content: space-between;
+}
+
+.devicon-html5-plain-wordmark,
+.devicon-css3-plain-wordmark,
+.devicon-javascript-plain,
+.devicon-react-original-wordmark,
+.devicon-nodejs-plain-wordmark {
+    font-size: 67px;
+    color: white;
+    animation-name: skills-icon;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+}
+
+.img-wordpress {
+    height: 62px;
+    width: auto;
+}
+
+.img-uxui {
+    height: 62px;
+    width: auto;
+}
+
+/*This is the End of Skills section*/
+
+/*This is the Start of Projects section*/
+
+.div-projects {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-projects h2 {
+    font-size: 55px;
+    padding: 90px;
+    color: white;
+
+    z-index: 1;
+    background-color: transparent;
+}
+
+.hr-projects {
+    width: 20%;
+    border-radius: 30px;
+    left: 900px;
+    bottom: 190px;
+    transform: skewY(-6deg);
+    border: 3px solid rgba(0, 136, 169, 1);
+    position: relative;
+    animation: alternate hr 4s infinite;
+    padding: 70px;
+    color: transparent;
+    box-shadow: 5px 10px 160px rgba(0, 136, 290, 1);
+    animation-timing-function: linear;
+}
+
+@keyframes hr {
+    from {
+        left: 38%;
+
+    }
+
+    to {
+        left: 43%;
+        transform: skewY(6deg);
+    }
+}
+
+
+/*This is the End of Projects section*/
+
+/*This is the Start of Projects list section*/
+
+
+.flex-projects-1, .flex-projects-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-projects-1, .flex-projects-2, p {
+    color: white;
+    line-height: 2;
+}
+
+.flex-projects-1, .flex-projects-2, h2 {
+    color: white;
+}
+
+.img-site-wordpress{
+    margin-top: 20px;
+    height: 30px;
+    width: auto;
+}
+
+.img-myhearing{
+    height: 380px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.btn-view-site{
+    color: white;
+    background-color: #0088a9;
+    padding: 9px;
+    position: relative;
+    top:-8px;
+    left: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 20px;
+    
+}
+
+.btn-view-site:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.flex-projects-2{
+    margin-top: 190px;
+    margin-bottom: 60px;
+}
+
+/*This is the End of Projects list section*/
+
+
+/*This is the Start of Media Query section*/
+
+@media all and (max-width: 1300px){
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .arrow-img {
+        width: 55px;
+        position: relative;
+        left: 43%;
+        top: 60px;
+        transform: rotate(90deg);
+        animation-name: arrow;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes arrow {
+        from {
+            top: 20px
+        }
+    
+        to {
+            bottom: 20px
+        }
+    }
+
+    .hr-projects {
+        width: 20%;
+        border-radius: 30px;
+        left: 20px;
+        bottom: 220px;
+        transform: skewY(-6deg);
+        border: 3px solid rgba(0, 136, 169, 1);
+        position: relative;
+        animation: alternate hr 4s infinite;
+        padding: 100px 220px;
+        color: transparent;
+        box-shadow: 5px 10px 160px rgba(0, 136, 290, 1);
+        animation-timing-function: linear;
+    }
+    
+    @keyframes hr {
+        from {
+            left: 22%;
+    
+        }
+    
+        to {
+            left: 30%;
+            transform: skewY(6deg);
+        }
+    }
+    
+    .flex-projects-1, .flex-projects-2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-projects-2{
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+
+    .img-myhearing{
+        width: 400px;
+        height: auto;
+    }
+    .flex-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10%;
+        flex-direction: column;
+    }
+
+    .div-menu li {
+       display:block; 
+       text-align: center;
+       padding: 9px;
+    }    
+    
+}
+
+@media all and (max-width: 670px){
+    .skills-icons{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .hr-projects {
+        width: 20%;
+        border-radius: 30px;
+        left: 20px;
+        bottom: 220px;
+        transform: skewY(-6deg);
+        border: 3px solid rgba(0, 136, 169, 1);
+        position: relative;
+        animation: alternate hr 4s infinite;
+        padding: 100px 150px;
+        color: transparent;
+        box-shadow: 5px 10px 160px rgba(0, 136, 290, 1);
+        animation-timing-function: linear;
+    }
+    
+    @keyframes hr {
+        from {
+            left: 11%;
+    
+        }
+    
+        to {
+            left: 25%;
+            transform: skewY(6deg);
+        }
+    }
+}
+
+
+/*This is the End of Media Query section*/
